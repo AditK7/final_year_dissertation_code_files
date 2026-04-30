@@ -1,5 +1,5 @@
 # final_year_dissertation_code_files
-All code used in project: Computational prediction of non-antibiotic molecules that bind penicillin binding proteins and beta lactamases.
+All code used in project: Computational prediction of non-antibiotic molecules that bind penicillin binding proteins and beta lactamases. 
 Code was written, edited and commented with the assistance of Claude Opus 4.7
 ## Repository contents
 
