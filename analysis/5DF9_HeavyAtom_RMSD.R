@@ -23,16 +23,6 @@ docked <- data.frame(
 cat("Crystal atoms:", nrow(crystal), "\n")
 cat("Docked atoms: ", nrow(docked), "\n\n")
 
-# Since atom names are not unique (multiple C's, O's, N's),
-# we can't match by name alone.
-# Instead, let's use the Hungarian algorithm approach:
-# Find the optimal one-to-one pairing that minimises total RMSD.
-# But with 38 atoms, brute force permutations are impossible.
-#
-# Better approach: match atoms of the SAME ELEMENT by nearest distance.
-# For each element type, find the optimal assignment between
-# crystal and docked atoms of that element.
-
 # Simple greedy nearest-neighbour matching within each element type
 match_by_element <- function(crystal_df, docked_df) {
   pairs <- data.frame(
