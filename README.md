@@ -8,7 +8,6 @@ Code was written, edited and commented with the assistance of Claude Opus 4.7
 | `library_preparation/` | Python script for fetching compounds from the ChEMBL API and Bash script for converting them to PDBQT format |
 | `docking/` | SLURM array job script for running AutoDock Vina on the University of Nottingham Ada HPC cluster |
 | `analysis/` | Python script for collecting and ranking docking results, R scripts for RMSD calculation and figure generation |
-| `data/` | Final ranked results from both target screens |
 
 ## Software dependencies
 
